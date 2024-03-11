@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --primary: rgba(24, 118, 242, 255);
+  --primary_dark: rgb(18, 70, 193);
+}
+
+body {
+  margin: 0;
+  background-color: rgb(243, 243, 243);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+}
+
+.card {
+  background-color: white;
+  margin: 0.5vmin;
+  padding: 1vmin;
+}
+
+nav {
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: row;
+  color: white;
+  height: 5dvh;
+  padding-left: 1dvw;
+  padding-right: 1dvw;
+  /* gap: 200px; */
+}
+
+nav > div {
+  display: inherit;
+  gap: 20px;
+  align-items: center;
+}
+
+nav input[type="text"] {
+  border-radius: 10px;
+  border: 1px gray solid;
+  outline: 0;
+  padding: 1dvh;
+}
+
+.nav_prof_pic {
+  border-radius: 50%;
+  height: 5dvh;
+}
+
+.logo {
+  height: 5dvh;
+  background-color: white;
+  opacity: 0.75;
+}
+
+.right-side-nav {
+  flex: 1 0 auto;
+  justify-content: end;
+  margin-right: 3%;
+}
+
+.main-body {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.profile-cover {
+  width: 100%;
+  height: 60dvh;
+  padding-top: 1%;
+  border-radius: 1vmax;
+}
+
+.profle-desc {
+  display: flex;
+  height: 20dvh;
+  color: gray;
+  font-weight: 600;
+}
+
+.profile-pic {
+  width: 13%;
+  height: 70%;
+}
+
+.profile-pic > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+
+.left-side-aligned {
+  display: flex;
+  flex: 1 1 auto;
+  width: 40%;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  gap: 1%;
+}
+
+.mx-5 {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.mutual_friends .col {
+  height: 8dvh;
+}
+
+.mutual_friends img {
+  height: 75%;
+  border-radius: 50%;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-yellow {
+  color: yellow;
+}
+.text-red {
+  color: red;
+}
+
+.name {
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: x-large;
+  color: rgb(72, 72, 72);
+}
+
+.right-side-aligned {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: end;
+}
+
+.left-side-width {
+  flex: 0 1 auto;
+  width: 20dvw;
+}
+
+.left-side-width img {
+  cursor: pointer;
+}
+
+.profle-desc img {
+  cursor: pointer;
+}
+
+.feed img {
+  cursor: pointer;
+}
+
+.photos .col {
+  margin-left: 5px;
+}
+
+.photos img {
+  width: 100%;
+}
+
+.friends .col {
+  margin-left: 5px;
+}
+
+.friends img {
+  width: 100%;
+}
+.friends p {
+  margin: 5px 0px;
+}
+
+.status_upd .image {
+  display: flex;
+  flex: 0 1 auto;
+  width: 10%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.status_upd img {
+  width: 60%;
+  border-radius: 50%;
+}
+
+.status-items textarea {
+  width: 95%;
+  height: 10vh;
+  border: 0px;
+  outline: 0px;
+  resize: none;
+  border-bottom: 1px solid grey;
+  margin-bottom: 2%;
+}
+
+.feed-item .image {
+  display: flex;
+  flex: 0 1 auto;
+  width: 10%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.feed-item img {
+  width: 60%;
+  border-radius: 50%;
+}
+
+.feed-item .feed-text,
+.feed-actions {
+  padding-left: 3%;
+  padding-right: 5%;
+
+  /* margin: 5%; */
+  /* display: flex; */
+  /* flex: 1 1 auto; */
+  /* width: 100%; */
+}
+
+.feed-actions {
+  display: flex;
+  margin-top: 2%;
+  gap: 2%;
+  /* align-items: center; */
+}
+
+.action-btn {
+  display: flex;
+  cursor: pointer;
+}
+
+/* .feed-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+button {
+  display: flex;
+  align-items: center;
+  padding: 0.25dvh;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background-color: var(--primary_dark);
+  color: white;
+}
+
+.feed-text img {
+  border-radius: 0;
+}
+
+.status-items p {
+  margin: 0;
+}
+
+.date {
+  font-weight: 100;
+  color: gray;
+}
+
+.feed-item .more {
+  text-align: end;
+}
+
+.more_settings,
+.feed-item .more span {
+  cursor: pointer;
+}
+
+.feed-text {
+  font-weight: lighter;
+  font-family: initial;
+}
+
+.intro {
+  text-align: center;
+}
+
+.action-btn .active {
+  color: var(--primary);
+}
+
+.side_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side_title > span {
+  color: var(--primary);
+  cursor: pointer;
+}
